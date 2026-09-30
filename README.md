@@ -1,4 +1,4 @@
-# Call-Prep Route
+# Sales Call Preparation and Research
 
 Give Claude a company name and get back a formatted PDF call-prep brief. The plugin runs the
 ten-stage "call-prep route" so a sales rep never has to write a research prompt.
@@ -40,9 +40,6 @@ so the stage can be re-run. Each claim is tagged SOURCED or INFERRED and cites n
 Once the plugin is listed in Anthropic's directory you can also find it by searching for
 "Call-Prep Route" under Customize.
 
-**Hermes Agent users:** use the Hermes version of this skill at
-https://github.com/ericgonzalez/HermesAgent-Callprep
-
 ## How to use it
 
 Ask in plain words, for example "Prep me for a call with Acme Corp", or run the command:
@@ -71,5 +68,7 @@ own profile or cited sources. Competitor pricing appears only when public. Quote
 
 ## Credits and license
 
-Based on "The call-prep route: ten moves before you dial" from Inference Drift by Eric Gonzalez.
 Released under the MIT License (see LICENSE).
+
+**Hermes Agent users:** use the Hermes version of this skill at
+https://github.com/ericgonzalez/HermesAgent-Callprep
