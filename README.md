@@ -1,1 +1,75 @@
-# Claude CoWork Callprep
+# Call-Prep Route
+
+Give Claude a company name and get back a formatted PDF call-prep brief. The plugin runs the
+ten-stage "call-prep route" so a sales rep never has to write a research prompt.
+
+![Sample brief, first two pages (fictional data)](docs/preview.png)
+
+## What you get
+
+A multi-page PDF with a call-day snapshot on page one, then all ten stages:
+
+1. One-page account brief
+2. Pain points from earnings calls, with short exact quotes
+3. Your contact's role
+4. Five open discovery questions with follow-ups
+5. A two-sentence opener anchored on something real and recent
+6. Buying committee
+7. Top three likely objections
+8. Competitor landscape
+9. A five-objection battle card (real concern, response, proof point, question back)
+10. A follow-up email and three value-adding touches
+
+The last page lists every gap (anything gated, missing or unverifiable) with exactly what to paste
+so the stage can be re-run. Each claim is tagged SOURCED or INFERRED and cites numbered sources.
+
+## Install
+
+**Claude Cowork / Claude desktop app**
+
+1. Open Customize, then Plugins, then Add marketplace.
+2. Paste `ericgonzalez/Claude-Callprep` and press Sync.
+3. Open the synced marketplace, find Call-Prep Route, and install it.
+4. Start a new chat and say "Prep me for a call with Acme Corp".
+
+**Claude Code**
+
+    /plugin marketplace add ericgonzalez/Claude-Callprep
+    /plugin install call-prep-route@call-prep-route-marketplace
+
+Once the plugin is listed in Anthropic's directory you can also find it by searching for
+"Call-Prep Route" under Customize.
+
+**Hermes Agent users:** use the Hermes version of this skill at
+https://github.com/ericgonzalez/HermesAgent-Callprep
+
+## How to use it
+
+Ask in plain words, for example "Prep me for a call with Acme Corp", or run the command:
+
+    /call-prep-route:prep Acme Corp, Jane Smith, VP Operations, new-logo discovery
+
+Only the company name is required. Contact, title and deal type sharpen the result. On the first
+run Claude asks one batched question about your own product, then offers to save it as
+`call-prep-seller-profile.md` in your working folder so later runs skip the question.
+
+## What this plugin runs, sends and fetches
+
+- **Research:** Claude's own web search and page-fetch tools, against public sources (company site,
+  press releases, investor pages, filings, job postings). It does not bypass logins or paywalls;
+  gated pages are reported as gaps.
+- **PDF:** a local Python script, `skills/call-prep-route/scripts/build_brief_pdf.py`, reads a JSON
+  file Claude writes and produces the PDF using the `reportlab` library. The script makes no
+  network requests and sends nothing anywhere. If `reportlab` is missing, Claude installs it with pip.
+- **No** MCP servers, hooks, credentials, telemetry or background processes. The follow-up email is
+  a draft only; nothing is ever sent.
+
+## Trust rules built into the skill
+
+Never invent names, quotes, prices, metrics or customer results. Proof points come only from your
+own profile or cited sources. Competitor pricing appears only when public. Quotes are short and attributed.
+
+## Credits and license
+
+Based on "The call-prep route: ten moves before you dial" from Inference Drift by Eric Gonzalez.
+Released under the MIT License (see LICENSE).

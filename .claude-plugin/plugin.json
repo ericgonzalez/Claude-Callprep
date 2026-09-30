@@ -1,0 +1,13 @@
+{
+  "name": "call-prep-route",
+  "displayName": "Call-Prep Route",
+  "version": "1.0.0",
+  "description": "Give Claude a company name and get a formatted PDF sales call-prep brief: account brief, earnings-call pain, contact role, discovery questions, opener, buying committee, objections, competitors, battle card, and follow-up plan.",
+  "author": {
+    "name": "Eric Gonzalez"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ericgonzalez/Claude-Callprep",
+  "repository": "https://github.com/ericgonzalez/Claude-Callprep",
+  "keywords": ["sales", "call-prep", "account-research", "battle-card", "pdf"]
+}

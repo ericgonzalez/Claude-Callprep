@@ -1,0 +1,11 @@
+{
+  "name": "call-prep-route-marketplace",
+  "owner": { "name": "Eric Gonzalez" },
+  "plugins": [
+    {
+      "name": "call-prep-route",
+      "source": "./",
+      "description": "Company name in, formatted PDF sales call-prep brief out."
+    }
+  ]
+}
