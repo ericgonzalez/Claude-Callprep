@@ -35,10 +35,16 @@ so the stage can be re-run. Each claim is tagged SOURCED or INFERRED and cites n
 
 **Claude Cowork / Claude desktop app**
 
+The Setup
+
 1. Open Customize, then Plugins, then Add marketplace.
 2. Paste `ericgonzalez/Claude-Callprep` and press Sync.
 3. Open the synced marketplace, find Call-Prep Route, and install it.
-4. Start a new chat and say "Prep me for a call with Acme Corp".
+4. Ask your agent to invoke the skill.  Type the following: "I'm going to provide you with some background on our company and products/services before we begin research. I'm going to summarize what we do, ask me questions to clarify once you have read it through our offering"  Then provide the agent with an overview of your offering.
+   
+The Operation
+
+From then on, anytime your reps need research, have the rep start a new chat and say "Prep me for a call with Acme Corp".
 
 **Claude Code**
 
