@@ -66,7 +66,7 @@ run Claude asks one batched question about your own product, then offers to save
 Never invent names, quotes, prices, metrics or customer results. Proof points come only from your
 own profile or cited sources. Competitor pricing appears only when public. Quotes are short and attributed.
 
-## Credits and license
+## License
 
 Released under the MIT License (see LICENSE).
 
