@@ -27,6 +27,10 @@ A multi-page PDF with a call-day snapshot on page one, then all ten stages:
 The last page lists every gap (anything gated, missing or unverifiable) with exactly what to paste
 so the stage can be re-run. Each claim is tagged SOURCED or INFERRED and cites numbered sources.
 
+## The Process
+
+
+
 ## Install
 
 **Claude Cowork / Claude desktop app**
@@ -65,10 +69,9 @@ run Claude asks one batched question about your own product, then offers to save
 - **No** MCP servers, hooks, credentials, telemetry or background processes. The follow-up email is
   a draft only; nothing is ever sent.
 
-## Trust rules built into the skill
+## Design Principles
 
-Never invent names, quotes, prices, metrics or customer results. Proof points come only from your
-own profile or cited sources. Competitor pricing appears only when public. Quotes are short and attributed.
+Never invent names, quotes, prices, metrics or customer results. No invented proof points, everything attributed. Proof points come only from your own profile or cited sources. Competitor pricing appears only when public. Quotes are short and attributed. gated or missing source → recorded in `gaps[]` with a concrete ask.  Quotes are short and exact:** at most two sentences verbatim, with speaker, call, and link — or they're dropped and tagged, because let's face it, your reps are busy.
 
 ## License
 
