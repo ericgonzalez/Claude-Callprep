@@ -29,7 +29,7 @@ so the stage can be re-run. Each claim is tagged SOURCED or INFERRED and cites n
 
 ## The Process
 
-
+![The ten-stage call-prep route](docs/call-prep-route-flowchart.png)
 
 ## Install
 
